@@ -1,0 +1,23 @@
+.footer {
+  background: var(--bg-darker);
+  padding: 40px 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  color: var(--text-muted);
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.footer-tagline {
+  font-weight: 500;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
