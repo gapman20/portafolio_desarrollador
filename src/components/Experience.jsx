@@ -2,25 +2,32 @@ import './Experience.css';
 
 const experiences = [
     {
-        date: '2023 — Presente',
-        title: 'Desarrollador Full Stack Senior',
-        company: 'Tech Solutions Inc.',
-        description: 'Lidero el desarrollo de aplicaciones web empresariales con React, Node.js y AWS. Implemento arquitecturas escalables y mentoreo a developers junior del equipo.',
-        chips: ['React', 'Node.js', 'AWS', 'PostgreSQL', 'Docker'],
+        date: 'Julio 2025 — Presente',
+        title: 'Desarrollador Full Stack (Frontend)',
+        company: 'Think Globally',
+        description: 'Lideré el desarrollo de una nueva aplicación web utilizando React, creando interfaces dinámicas y optimizando la UX. Realicé mantenimiento en sistemas PHP e integré servicios entre frontend y backend.',
+        chips: ['React', 'PHP', 'Frontend', 'Backend'],
     },
     {
-        date: '2021 — 2023',
-        title: 'Desarrollador Frontend',
-        company: 'Digital Agency Pro',
-        description: 'Construí interfaces responsive y accesibles para clientes de distintos sectores. Colaboré de cerca con diseñadores UX/UI para traducir mockups en código production-ready.',
-        chips: ['React', 'TypeScript', 'Tailwind', 'Figma'],
+        date: 'Septiembre 2022 — Agosto 2024',
+        title: 'Técnico en mantenimiento',
+        company: 'Dayton Solutions',
+        description: 'Lideré mantenimiento preventivo y correctivo de equipos de impresión (reduciendo un 30% tiempos inactivos). Capacité compañeros e integré soluciones de monitoreo remoto.',
+        chips: ['Mantenimiento', 'Liderazgo', 'Capacitación'],
     },
     {
-        date: '2020 — 2021',
-        title: 'Desarrollador Web Junior',
-        company: 'StartUp Innovators',
-        description: 'Donde todo empezó. Desarrollé mis primeras webs en producción, aprendí las bases del código limpio e integré mis primeras APIs REST.',
-        chips: ['HTML', 'CSS', 'JavaScript', 'APIs REST'],
+        date: 'Abril 2025 — Julio 2025',
+        title: 'Java FullStack JR',
+        company: 'Generation México',
+        description: 'Bootcamp intensivo donde desarrollé aplicaciones web completas. Proyecto final "Patita Oriental": e-commerce con catálogo, carrito y API REST usando Scrum.',
+        chips: ['Java', 'Spring Boot', 'React', 'Scrum'],
+    },
+    {
+        date: 'Septiembre 2017 — Junio 2022',
+        title: 'Ingeniería Electrónica',
+        company: 'Tecnológico de Ciudad Madero',
+        description: 'Formación universitaria en electrónica, control y programación, forjando bases sólidas en resolución de problemas analíticos.',
+        chips: ['Ingeniería', 'Electrónica', 'C++', 'Python'],
     },
 ];
 
@@ -37,11 +44,11 @@ const Experience = () => {
                             <span className="gradient-text">profesional</span>
                         </h2>
                         <p>
-                            Cada empresa me enseñó algo distinto. De startups a agencias,
-                            el denominador común siempre fue el mismo: escribir código que
-                            resuelve problemas reales.
+                            Mi trayectoria combina una base sólida en ingeniería y mantenimiento técnico
+                            con una pasión por el desarrollo de software. Cada experiencia me ha enseñado
+                            a resolver problemas reales de forma eficiente.
                         </p>
-                        <button className="btn-ghost" onClick={() => window.open('/cv.pdf')}>
+                        <button className="btn-ghost" onClick={() => window.open('/GabrielAlvarez_CV.pdf')}>
                             Descargar CV completo
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                 <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />

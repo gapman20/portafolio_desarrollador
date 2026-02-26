@@ -2,10 +2,10 @@ import './Projects.css';
 
 const projects = [
     {
-        title: 'E-Commerce Platform',
-        description: 'Plataforma de comercio electrónico completa con carrito, pasarela de pagos y panel admin. Arquitectura escalable con React y Node.js.',
-        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-        emoji: '🛒',
+        title: 'Patita Oriental (E-Commerce)',
+        description: 'Aplicación e-commerce desarrollada en equipo. Cuenta con catálogo interactivo y filtros dinámicos, carrito de compras con persistencia, e integración con API REST.',
+        tags: ['React', 'HTML5', 'CSS3', 'Bootstrap'],
+        emoji: '🐾',
         demo: '#',
         code: '#',
         featured: true,

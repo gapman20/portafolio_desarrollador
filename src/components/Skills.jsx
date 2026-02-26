@@ -2,27 +2,27 @@ import { useEffect, useRef, useState } from 'react';
 import './Skills.css';
 
 const techs = [
-    { icon: '⚛️', name: 'React.js', level: 'Avanzado' },
+    { icon: '⚛️', name: 'React', level: 'Intermedio' },
     { icon: '🟨', name: 'JavaScript', level: 'Avanzado' },
-    { icon: '🔷', name: 'TypeScript', level: 'Intermedio' },
-    { icon: '📦', name: 'Node.js', level: 'Avanzado' },
-    { icon: '🎨', name: 'CSS / Tailwind', level: 'Avanzado' },
-    { icon: '🗄️', name: 'PostgreSQL', level: 'Intermedio' },
-    { icon: '🍃', name: 'MongoDB', level: 'Intermedio' },
+    { icon: '☕', name: 'Java', level: 'Avanzado' },
+    { icon: '🍃', name: 'Spring Boot', level: 'Intermedio' },
+    { icon: '🌐', name: 'HTML5 / CSS3', level: 'Avanzado' },
+    { icon: '🗄️', name: 'SQL / NoSQL', level: 'Intermedio' },
+    { icon: '🐘', name: 'PHP', level: 'Básico' },
     { icon: '🐳', name: 'Docker', level: 'Básico' },
-    { icon: '☁️', name: 'AWS / Cloud', level: 'Básico' },
-    { icon: '🔧', name: 'Git & GitHub', level: 'Avanzado' },
-    { icon: '🖥️', name: 'Next.js', level: 'Intermedio' },
-    { icon: '🎭', name: 'Figma', level: 'Intermedio' },
+    { icon: '🐍', name: 'Python', level: 'Básico' },
+    { icon: '🔧', name: 'Git/GitHub', level: 'Avanzado' },
+    { icon: '🔌', name: 'C++', level: 'Básico' },
+    { icon: '📦', name: 'Node.js', level: 'Intermedio' },
 ];
 
 const proficiencies = [
-    { name: 'HTML & CSS', pct: 95 },
-    { name: 'JavaScript / ES6+', pct: 90 },
-    { name: 'React.js', pct: 85 },
-    { name: 'Node.js / Express', pct: 82 },
-    { name: 'Bases de datos SQL', pct: 78 },
-    { name: 'DevOps / Docker', pct: 65 },
+    { name: 'JavaScript / HTML5 / CSS3', pct: 90 },
+    { name: 'Java / Spring Boot', pct: 85 },
+    { name: 'React / Node.js', pct: 80 },
+    { name: 'Bases de datos SQL/NoSQL', pct: 75 },
+    { name: 'Git / GitHub', pct: 85 },
+    { name: 'Docker / PHP', pct: 60 },
 ];
 
 const Skills = () => {

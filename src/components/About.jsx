@@ -2,12 +2,12 @@ import { useEffect, useRef } from 'react';
 import './About.css';
 
 const traits = [
-    { emoji: '🧠', text: 'Problem Solver' },
-    { emoji: '⚡', text: 'Clean Code' },
-    { emoji: '🎨', text: 'UI Conscious' },
-    { emoji: '🚀', text: 'Performance first' },
-    { emoji: '📱', text: 'Mobile first' },
-    { emoji: '🔐', text: 'Security minded' },
+    { emoji: '🧠', text: 'Resolución de problemas' },
+    { emoji: '🤝', text: 'Trabajo en equipo' },
+    { emoji: '🗣️', text: 'Comunicación asertiva' },
+    { emoji: '📈', text: 'Rápida adaptación' },
+    { emoji: '🔄', text: 'Metodologías ágiles' },
+    { emoji: '💡', text: 'Mentoring' },
 ];
 
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
                             <div className="about-floating-card card-bottom-left">
                                 <span className="card-icon">🔥</span>
                                 <div className="card-text">
-                                    <strong>3+ años</strong>
+                                    <strong>2+ años</strong>
                                     <span>de experiencia</span>
                                 </div>
                             </div>
@@ -63,16 +63,15 @@ const About = () => {
 
                         <div className="reveal" style={{ transitionDelay: '0.2s' }}>
                             <p className="about-intro">
-                                No soy solo alguien que escribe código — me importa el por qué detrás de cada decisión técnica.
+                                Soy Desarrollador Full Stack Junior e Ingeniero Electrónico orientado a resultados.
                             </p>
                             <p>
-                                Empecé curioseando cómo funcionaban los sitios web y esa curiosidad nunca paró.
-                                Hoy combino frontend y backend para crear productos que realmente funcionan,
-                                escalan y se ven bien haciéndolo.
+                                Mi experiencia abarca desde el mantenimiento técnico de hardware hasta el desarrollo
+                                de aplicaciones web robustas. Disfruto construyendo sistemas eficientes con Java, Spring Boot y React.
                             </p>
                             <p>
-                                Cuando no estoy programando, probablemente estoy leyendo sobre arquitectura de software,
-                                jugando con alguna nueva tecnología o tomando demasiado café.
+                                Me enorgullece mi capacidad para adaptarme rápidamente a nuevos entornos técnicos, colaborar
+                                en equipo y encontrar soluciones elegantes a problemas complejos.
                             </p>
                         </div>
 
@@ -89,7 +88,7 @@ const About = () => {
                             <button className="btn-primary" onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}>
                                 Ver proyectos
                             </button>
-                            <a href="/cv.pdf" className="btn-ghost" download>
+                            <a href="/cv-gabriel-alvarez.pdf" className="btn-ghost" download="cv-gabriel-alvarez.pdf">
                                 Descargar CV
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
