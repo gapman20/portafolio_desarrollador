@@ -168,3 +168,29 @@
   .card-top-right { right: 0; }
   .card-bottom-left { left: 0; }
 }
+
+@media (max-width: 600px) {
+  .about {
+    padding: 5rem 0;
+  }
+  .about-floating-card {
+    display: none;
+  }
+  .about-layout {
+    gap: 2rem;
+  }
+  .avatar-frame {
+    max-width: 200px;
+  }
+  .about-intro {
+    font-size: 1.1rem;
+  }
+  .about-cta-row {
+    flex-direction: column;
+  }
+  .about-cta-row .btn-primary,
+  .about-cta-row .btn-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+}
