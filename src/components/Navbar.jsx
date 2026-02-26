@@ -71,7 +71,7 @@ const Navbar = ({ scrolled }) => {
                         ))}
                         <li>
                             <a
-                                href="mailto:tucorreo@email.com"
+                                href="mailto:gabrielalvarezp20@gmail.com"
                                 className="nav-link nav-cta"
                             >
                                 Contáctame
