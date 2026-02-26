@@ -88,7 +88,7 @@ const About = () => {
                             <button className="btn-primary" onClick={() => document.getElementById('proyectos')?.scrollIntoView({ behavior: 'smooth' })}>
                                 Ver proyectos
                             </button>
-                            <a href="/cv-gabriel-alvarez.pdf" className="btn-ghost" download="cv-gabriel-alvarez.pdf">
+                            <a href="/GabrielAlvarez_CV.pdf" className="btn-ghost" download="GabrielAlvarez_CV.pdf">
                                 Descargar CV
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                                     <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
