@@ -53,7 +53,7 @@ const Hero = () => {
 
                     <h1 className="hero-name">
                         Hola, soy<br />
-                        <span className="gradient-text">Tu Nombre</span>
+                        <span className="gradient-text">Gabriel Alvarez</span>
                     </h1>
 
                     <div className="hero-role-wrapper">
@@ -81,17 +81,17 @@ const Hero = () => {
 
                     <div className="hero-stats">
                         <div className="stat">
-                            <span className="stat-number">3+</span>
+                            <span className="stat-number">1+</span>
                             <span className="stat-label">Años de exp.</span>
                         </div>
                         <div className="stat-divider" />
                         <div className="stat">
-                            <span className="stat-number">25+</span>
+                            <span className="stat-number">10+</span>
                             <span className="stat-label">Proyectos</span>
                         </div>
                         <div className="stat-divider" />
                         <div className="stat">
-                            <span className="stat-number">15+</span>
+                            <span className="stat-number">5+</span>
                             <span className="stat-label">Clientes</span>
                         </div>
                     </div>
