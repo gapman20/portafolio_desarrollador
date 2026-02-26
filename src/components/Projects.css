@@ -178,3 +178,20 @@
   }
   .project-card.featured .project-preview { width: 100%; }
 }
+
+@media (max-width: 560px) {
+  .projects {
+    padding: 5rem 0;
+  }
+  .project-card {
+    padding: 1.25rem;
+  }
+  .project-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+}

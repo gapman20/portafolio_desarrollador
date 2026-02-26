@@ -140,3 +140,15 @@
   }
   .experience-sidebar { position: static; }
 }
+
+@media (max-width: 560px) {
+  .experience {
+    padding: 5rem 0;
+  }
+  .timeline-item {
+    gap: 1rem;
+  }
+  .timeline-body {
+    padding-bottom: 2rem;
+  }
+}

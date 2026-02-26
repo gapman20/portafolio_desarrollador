@@ -140,6 +140,16 @@
 .skill-fill.animate { width: var(--target-width); }
 
 @media (max-width: 600px) {
-  .tech-grid { grid-template-columns: repeat(3, 1fr); }
+  .skills {
+    padding: 5rem 0;
+  }
+  .tech-grid { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
   .skills-bars { grid-template-columns: 1fr; }
+  .skills-header { margin-bottom: 2.5rem; }
+}
+
+@media (max-width: 400px) {
+  .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  .tech-card { padding: 0.9rem 0.6rem; }
+  .tech-icon { font-size: 1.6rem; }
 }
