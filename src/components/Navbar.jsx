@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = ({ scrolled }) => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState('inicio');
 
     const handleScrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
@@ -12,12 +13,39 @@ const Navbar = ({ scrolled }) => {
         }
     };
 
+    useEffect(() => {
+        const sections = ['inicio', 'sobre-mi', 'habilidades', 'proyectos', 'experiencia'];
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) setActiveSection(entry.target.id);
+                });
+            },
+            { threshold: 0.4 }
+        );
+        sections.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) observer.observe(el);
+        });
+        return () => observer.disconnect();
+    }, []);
+
+    const navItems = [
+        { id: 'inicio', label: 'Inicio' },
+        { id: 'sobre-mi', label: 'Sobre Mí' },
+        { id: 'habilidades', label: 'Habilidades' },
+        { id: 'proyectos', label: 'Proyectos' },
+        { id: 'experiencia', label: 'Experiencia' },
+    ];
+
     return (
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="nav-content">
                     <a href="#" className="logo">
-                        Dev<span className="logo-accent">Portfolio</span>
+                        <span className="logo-bracket">{'<'}</span>
+                        <span className="logo-name">Dev</span>
+                        <span className="logo-bracket">{'/>'}</span>
                     </a>
 
                     <button
@@ -31,12 +59,24 @@ const Navbar = ({ scrolled }) => {
                     </button>
 
                     <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-                        <li><a onClick={() => handleScrollToSection('inicio')} className="nav-link">Inicio</a></li>
-                        <li><a onClick={() => handleScrollToSection('sobre-mi')} className="nav-link">Sobre Mí</a></li>
-                        <li><a onClick={() => handleScrollToSection('habilidades')} className="nav-link">Habilidades</a></li>
-                        <li><a onClick={() => handleScrollToSection('proyectos')} className="nav-link">Proyectos</a></li>
-                        <li><a onClick={() => handleScrollToSection('experiencia')} className="nav-link">Experiencia</a></li>
-                        <li><a onClick={() => handleScrollToSection('contacto')} className="nav-link btn-contact">Contacto</a></li>
+                        {navItems.map(item => (
+                            <li key={item.id}>
+                                <a
+                                    onClick={() => handleScrollToSection(item.id)}
+                                    className={`nav-link ${activeSection === item.id ? 'active-link' : ''}`}
+                                >
+                                    {item.label}
+                                </a>
+                            </li>
+                        ))}
+                        <li>
+                            <a
+                                href="mailto:tucorreo@email.com"
+                                className="nav-link nav-cta"
+                            >
+                                Contáctame
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

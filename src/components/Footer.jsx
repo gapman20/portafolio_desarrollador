@@ -1,14 +1,21 @@
 import './Footer.css';
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
-
+    const year = new Date().getFullYear();
     return (
         <footer className="footer">
             <div className="container">
                 <div className="footer-content">
-                    <p>&copy; {currentYear} DevPortfolio. Todos los derechos reservados.</p>
-                    <p className="footer-tagline">Diseñado y desarrollado con ❤️</p>
+                    <div className="footer-left">
+                        <span className="footer-logo">
+                            {'<'}<span className="footer-logo-accent">Dev</span>{'/>'}
+                        </span>
+                        <div className="footer-divider" />
+                        <span className="footer-copy">© {year} Todos los derechos reservados</span>
+                    </div>
+                    <div className="footer-right">
+                        Hecho con <span className="footer-heart">♥</span> y mucho café
+                    </div>
                 </div>
             </div>
         </footer>

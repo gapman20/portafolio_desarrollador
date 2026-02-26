@@ -1,56 +1,74 @@
+import { useEffect, useRef, useState } from 'react';
 import './Skills.css';
 
+const techs = [
+    { icon: '⚛️', name: 'React.js', level: 'Avanzado' },
+    { icon: '🟨', name: 'JavaScript', level: 'Avanzado' },
+    { icon: '🔷', name: 'TypeScript', level: 'Intermedio' },
+    { icon: '📦', name: 'Node.js', level: 'Avanzado' },
+    { icon: '🎨', name: 'CSS / Tailwind', level: 'Avanzado' },
+    { icon: '🗄️', name: 'PostgreSQL', level: 'Intermedio' },
+    { icon: '🍃', name: 'MongoDB', level: 'Intermedio' },
+    { icon: '🐳', name: 'Docker', level: 'Básico' },
+    { icon: '☁️', name: 'AWS / Cloud', level: 'Básico' },
+    { icon: '🔧', name: 'Git & GitHub', level: 'Avanzado' },
+    { icon: '🖥️', name: 'Next.js', level: 'Intermedio' },
+    { icon: '🎭', name: 'Figma', level: 'Intermedio' },
+];
+
+const proficiencies = [
+    { name: 'HTML & CSS', pct: 95 },
+    { name: 'JavaScript / ES6+', pct: 90 },
+    { name: 'React.js', pct: 85 },
+    { name: 'Node.js / Express', pct: 82 },
+    { name: 'Bases de datos SQL', pct: 78 },
+    { name: 'DevOps / Docker', pct: 65 },
+];
+
 const Skills = () => {
-    const skillsData = [
-        {
-            category: 'Frontend',
-            skills: [
-                { name: 'HTML5 & CSS3', level: 95 },
-                { name: 'JavaScript (ES6+)', level: 90 },
-                { name: 'React.js', level: 85 },
-                { name: 'Tailwind CSS', level: 88 }
-            ]
-        },
-        {
-            category: 'Backend',
-            skills: [
-                { name: 'Node.js', level: 82 },
-                { name: 'Express.js', level: 80 },
-                { name: 'MongoDB', level: 75 },
-                { name: 'PostgreSQL', level: 78 }
-            ]
-        },
-        {
-            category: 'Herramientas',
-            skills: [
-                { name: 'Git & GitHub', level: 90 },
-                { name: 'VS Code', level: 92 },
-                { name: 'Figma', level: 70 },
-                { name: 'Docker', level: 65 }
-            ]
-        }
-    ];
+    const [animated, setAnimated] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => { if (entry.isIntersecting) setAnimated(true); },
+            { threshold: 0.2 }
+        );
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
 
     return (
-        <section id="habilidades" className="skills">
+        <section id="habilidades" className="skills" ref={ref}>
             <div className="container">
-                <h2 className="section-title">Habilidades Técnicas</h2>
-                <div className="skills-grid">
-                    {skillsData.map((category, index) => (
-                        <div key={index} className="skill-category">
-                            <h3 className="category-title">{category.category}</h3>
-                            <div className="skill-items">
-                                {category.skills.map((skill, skillIndex) => (
-                                    <div key={skillIndex} className="skill-item">
-                                        <span className="skill-name">{skill.name}</span>
-                                        <div className="skill-bar">
-                                            <div
-                                                className="skill-progress"
-                                                style={{ width: `${skill.level}%` }}
-                                            ></div>
-                                        </div>
-                                    </div>
-                                ))}
+                <div className="skills-header reveal" style={{ opacity: 1, transform: 'none' }}>
+                    <span className="section-label">Stack técnico</span>
+                    <h2 className="section-title">Mis <span className="gradient-text">herramientas</span></h2>
+                    <p>Tecnologías con las que trabajo día a día para construir productos robustos y escalables.</p>
+                </div>
+
+                <div className="tech-grid">
+                    {techs.map((t, i) => (
+                        <div key={i} className="tech-card">
+                            <span className="tech-icon">{t.icon}</span>
+                            <span className="tech-name">{t.name}</span>
+                            <span className="tech-level">{t.level}</span>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="skills-bars">
+                    {proficiencies.map((s, i) => (
+                        <div key={i} className="skill-bar-item">
+                            <div className="skill-bar-header">
+                                <span className="skill-bar-name">{s.name}</span>
+                                <span className="skill-bar-pct">{s.pct}%</span>
+                            </div>
+                            <div className="skill-track">
+                                <div
+                                    className={`skill-fill ${animated ? 'animate' : ''}`}
+                                    style={{ '--target-width': `${s.pct}%`, transitionDelay: `${i * 0.1}s` }}
+                                />
                             </div>
                         </div>
                     ))}
