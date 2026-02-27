@@ -4,34 +4,50 @@ const projects = [
     {
         title: 'Patita Oriental (E-Commerce)',
         description: 'Aplicación e-commerce desarrollada en equipo. Cuenta con catálogo interactivo y filtros dinámicos, carrito de compras con persistencia, e integración con API REST.',
-        tags: ['React', 'HTML5', 'CSS3', 'Bootstrap'],
+        tags: ['React', 'HTML5', 'CSS3', 'Bootstrap', 'Spring Boot', 'MySQL', 'Java'],
         emoji: '🐾',
         demo: 'https://patitaorientalgdl.netlify.app/',
-        code: '#',
+        code: 'https://github.com/gapman20/PatitaOrientalWeb',
         featured: true,
     },
     {
-        title: 'Task Manager App',
-        description: 'Gestión de tareas con tableros Kanban, colaboración en tiempo real y notificaciones push.',
-        tags: ['React', 'Firebase', 'Tailwind'],
-        emoji: '📋',
-        demo: '#',
+        title: 'Seaconay',
+        description: 'Sitio web corporativo desarrollado a la medida. Diseño responsivo y optimizado para una excelente experiencia de usuario.',
+        tags: ['Web Development', 'React', 'CSS3'],
+        emoji: '🏢',
+        demo: 'https://seaconay.mx/',
         code: '#',
     },
     {
-        title: 'Weather Dashboard',
-        description: 'Dashboard del clima con pronóstico extendido, mapas interactivos y visualización de datos.',
-        tags: ['JavaScript', 'API REST', 'CSS'],
-        emoji: '🌤️',
-        demo: '#',
+        title: 'Proyectos Capri',
+        description: 'Desarrollo de plataforma web corporativa, destacando servicios y proyectos mediante una interfaz moderna y atractiva.',
+        tags: ['Web', 'Responsive', 'UI/UX'],
+        emoji: '🏗️',
+        demo: 'https://proyectoscapri.com/',
         code: '#',
     },
     {
-        title: 'Portfolio CMS',
-        description: 'CMS para portafolios con editor visual, SEO optimizado y generación estática de páginas.',
-        tags: ['Next.js', 'Strapi', 'GraphQL'],
-        emoji: '⚙️',
-        demo: '#',
+        title: 'Contempo Impact',
+        description: 'Página web profesional enfocada en el impacto y presencia digital, con un diseño limpio y moderno.',
+        tags: ['Desarrollo Web', 'Corporativo'],
+        emoji: '✨',
+        demo: 'https://contempoimpact.mx/',
+        code: '#',
+    },
+    {
+        title: 'Rhipsalis',
+        description: 'Sitio web desarrollado para la marca, presentando sus servicios con un diseño enfocado en la conversión.',
+        tags: ['Web', 'Diseño', 'Frontend'],
+        emoji: '🌿',
+        demo: 'https://rhipsalis.mx/',
+        code: '#',
+    },
+    {
+        title: 'Sviluppo',
+        description: 'Plataforma web desarrollada a la medida, asegurando un diseño escalable, rápido y con buenas prácticas de SEO.',
+        tags: ['Desarrollo Web', 'SEO', 'Performance'],
+        emoji: '🚀',
+        demo: 'https://sviluppo.mx/',
         code: '#',
     },
 ];
@@ -91,8 +107,8 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-preview" style={p.title.includes('Patita Oriental') ? { padding: 0, display: 'block', overflow: 'hidden' } : {}}>
-                                {p.title.includes('Patita Oriental') ? (
+                            <div className="project-preview" style={p.demo !== '#' ? { padding: 0, display: 'block', overflow: 'hidden' } : {}}>
+                                {p.demo !== '#' ? (
                                     <iframe 
                                         src={p.demo} 
                                         title={p.title} 
