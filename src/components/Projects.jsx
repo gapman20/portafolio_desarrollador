@@ -6,7 +6,7 @@ const projects = [
         description: 'Aplicación e-commerce desarrollada en equipo. Cuenta con catálogo interactivo y filtros dinámicos, carrito de compras con persistencia, e integración con API REST.',
         tags: ['React', 'HTML5', 'CSS3', 'Bootstrap'],
         emoji: '🐾',
-        demo: '#',
+        demo: 'https://patitaorientalgdl.netlify.app/',
         code: '#',
         featured: true,
     },
@@ -81,7 +81,8 @@ const Projects = () => {
                                 </div>
                                 <div className="project-footer">
                                     <div className="project-links-row">
-                                        <a href={p.demo} className="project-link-btn">
+                                        <a href={p.demo} className="project-link-btn" target="_blank" 
+                                            rel="noopener noreferrer">
                                             <ArrowIcon /> Demo
                                         </a>
                                         <a href={p.code} className="project-link-btn">
