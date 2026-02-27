@@ -62,7 +62,7 @@ const Hero = () => {
                     </div>
 
                     <p className="hero-description">
-                        Desarrollador Full Stack Junior e Ingeniero Electrónico. Especializado en construir
+                        Desarrollador Full Stack Junior. Especializado en construir
                         aplicaciones robustas con Java, Spring Boot, React y bases de datos SQL/NoSQL.
                         Apasionado por resolver problemas y trabajar en equipo.
                     </p>
