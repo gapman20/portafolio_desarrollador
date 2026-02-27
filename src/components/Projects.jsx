@@ -101,9 +101,6 @@ const Projects = () => {
                                             rel="noopener noreferrer">
                                             <ArrowIcon /> Demo
                                         </a>
-                                        <a href={p.code} className="project-link-btn">
-                                            <CodeIcon /> Código
-                                        </a>
                                     </div>
                                 </div>
                             </div>
