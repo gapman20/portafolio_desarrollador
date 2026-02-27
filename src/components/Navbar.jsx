@@ -53,7 +53,14 @@ const Navbar = ({ scrolled }) => {
         <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <div className="nav-content">
-                    <a href="#" className="logo">
+                    <a 
+                        className="logo" 
+                        onClick={(e) => {
+                            e.preventDefault();
+                            handleScrollToSection('inicio');
+                        }}
+                        style={{ cursor: 'pointer' }}
+                    >
                         <span className="logo-bracket">{'<'}</span>
                         <span className="logo-name">Dev</span>
                         <span className="logo-bracket">{'/>'}</span>
