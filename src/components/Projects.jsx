@@ -91,8 +91,18 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="project-preview">
-                                <span>{p.emoji}</span>
+                            <div className="project-preview" style={p.title.includes('Patita Oriental') ? { padding: 0, display: 'block', overflow: 'hidden' } : {}}>
+                                {p.title.includes('Patita Oriental') ? (
+                                    <iframe 
+                                        src={p.demo} 
+                                        title={p.title} 
+                                        style={{ width: '100%', height: '100%', border: 'none' }}
+                                        sandbox="allow-scripts allow-same-origin"
+                                        loading="lazy"
+                                    />
+                                ) : (
+                                    <span>{p.emoji}</span>
+                                )}
                             </div>
                         </article>
                     ))}
