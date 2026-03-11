@@ -50,6 +50,14 @@ const projects = [
         demo: 'https://sviluppo.mx/',
         code: '#',
     },
+    {
+        title: 'Pagina con panel de administrador — Sitio Web CMS',
+        description: 'Página web profesional para empresa con panel de administrador completo. Permite gestionar textos, imágenes, catálogo de productos, blog con editor Markdown, colores y tema en tiempo real, menú de navegación, SEO, WhatsApp flotante, redes sociales e inbox de mensajes, todo sin tocar código. Autenticación y persistencia con Firebase.',
+        tags: ['React', 'Vite', 'Firebase', 'Firestore', 'CSS3'],
+        emoji: '⚡',
+        demo: 'https://clever-cannoli-a6c76f.netlify.app/',
+        code: '#',
+    },
 ];
 
 const ArrowIcon = () => (
@@ -97,7 +105,7 @@ const Projects = () => {
                                 </div>
                                 <div className="project-footer">
                                     <div className="project-links-row">
-                                        <a href={p.demo} className="project-link-btn" target="_blank" 
+                                        <a href={p.demo} className="project-link-btn" target="_blank"
                                             rel="noopener noreferrer">
                                             <ArrowIcon /> Demo
                                         </a>
@@ -106,9 +114,9 @@ const Projects = () => {
                             </div>
                             <div className="project-preview" style={p.demo !== '#' ? { padding: 0, display: 'block', overflow: 'hidden' } : {}}>
                                 {p.demo !== '#' ? (
-                                    <iframe 
-                                        src={p.demo} 
-                                        title={p.title} 
+                                    <iframe
+                                        src={p.demo}
+                                        title={p.title}
                                         style={{ width: '100%', height: '100%', border: 'none' }}
                                         sandbox="allow-scripts allow-same-origin"
                                         loading="lazy"
