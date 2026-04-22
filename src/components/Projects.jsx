@@ -2,17 +2,25 @@ import './Projects.css';
 
 const projects = [
     {
+        title: 'TCG Store (E-Commerce)',
+        description: 'E-commerce completo para cartas coleccionables y productos sellados de múltiples juegos TCG (Pokemon, Yu-Gi-Oh!, Magic, Digimon, One Piece, Dragon Ball, Lorcana). Incluye catálogo interactivo con filtros, carrito persistente, wishlist por usuario, pasarela de pagos Stripe/PayPal, autenticación con email y Google OAuth, panel de administración con gestión de inventario, pedidos y CMS dinámico.',
+        tags: ['React 19', 'Vite', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'JWT', 'Stripe', 'Firebase'],
+        emoji: '🃏',
+        demo: 'https://tcg-frontend-one.vercel.app/',
+        code: '#',
+        featured: true,
+    },
+    {
         title: 'Patita Oriental (E-Commerce)',
         description: 'Aplicación e-commerce desarrollada en equipo. Cuenta con catálogo interactivo y filtros dinámicos, carrito de compras con persistencia, e integración con API REST.',
         tags: ['React', 'HTML5', 'CSS3', 'Bootstrap', 'Spring Boot', 'MySQL', 'Java'],
         emoji: '🐾',
         demo: 'https://patitaorientalgdl.netlify.app/',
         code: 'https://github.com/gapman20/PatitaOrientalWeb',
-        featured: true,
     },
-    {
+        {
         title: 'Seaconay',
-        description: 'Sitio web corporativo desarrollado a la medida. Diseño responsivo y optimizado para una excelente experiencia de usuario.',
+        description: 'Sitio web corporativo para cliente real. Desarrollo a la medida con diseño responsivo, optimizado para SEO y una excelente experiencia de usuario.',
         tags: ['Web Development', 'React', 'CSS3'],
         emoji: '🏢',
         demo: 'https://seaconay.mx/',
@@ -20,7 +28,7 @@ const projects = [
     },
     {
         title: 'Proyectos Capri',
-        description: 'Desarrollo de plataforma web corporativa, destacando servicios y proyectos mediante una interfaz moderna y atractiva.',
+        description: 'Plataforma web corporativa para cliente real. Diseño moderno para destacar servicios y proyectos con interfaz atractiva y responsive.',
         tags: ['Web', 'Responsive', 'UI/UX'],
         emoji: '🏗️',
         demo: 'https://proyectoscapri.com/',
@@ -28,7 +36,7 @@ const projects = [
     },
     {
         title: 'Contempo Impact',
-        description: 'Página web profesional enfocada en el impacto y presencia digital, con un diseño limpio y moderno.',
+        description: 'Página web profesional para cliente real. Diseño limpio y moderno enfocado en impacto y presencia digital.',
         tags: ['Desarrollo Web', 'Corporativo'],
         emoji: '✨',
         demo: 'https://contempoimpact.mx/',
@@ -36,7 +44,7 @@ const projects = [
     },
     {
         title: 'Rhipsalis',
-        description: 'Sitio web desarrollado para la marca, presentando sus servicios con un diseño enfocado en la conversión.',
+        description: 'Sitio web para cliente real. Presentación de servicios con diseño enfocado en conversión y UX.',
         tags: ['Web', 'Diseño', 'Frontend'],
         emoji: '🌿',
         demo: 'https://rhipsalis.mx/',
@@ -44,18 +52,10 @@ const projects = [
     },
     {
         title: 'Sviluppo',
-        description: 'Plataforma web desarrollada a la medida, asegurando un diseño escalable, rápido y con buenas prácticas de SEO.',
+        description: 'Plataforma web para cliente real. Desarrollo a la medida con diseño escalable, rápido y buenas prácticas de SEO.',
         tags: ['Desarrollo Web', 'SEO', 'Performance'],
         emoji: '🚀',
         demo: 'https://sviluppo.mx/',
-        code: '#',
-    },
-    {
-        title: 'Pagina con panel de administrador — Sitio Web CMS',
-        description: 'Página web profesional para empresa con panel de administrador completo. Permite gestionar textos, imágenes, catálogo de productos, blog con editor Markdown, colores y tema en tiempo real, menú de navegación, SEO, WhatsApp flotante, redes sociales e inbox de mensajes, todo sin tocar código. Autenticación y persistencia con Firebase.',
-        tags: ['React', 'Vite', 'Firebase', 'Firestore', 'CSS3'],
-        emoji: '⚡',
-        demo: 'https://clever-cannoli-a6c76f.netlify.app/',
         code: '#',
     },
 ];
