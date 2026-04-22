@@ -61,9 +61,7 @@ const Navbar = ({ scrolled }) => {
                         }}
                         style={{ cursor: 'pointer' }}
                     >
-                        <span className="logo-bracket">{'<'}</span>
-                        <span className="logo-name">Dev</span>
-                        <span className="logo-bracket">{'/>'}</span>
+                        <img src="/Basalto_dev.png" alt="Basalto Dev" style={{ height: '40px', width: 'auto' }} />
                     </a>
 
                     <button

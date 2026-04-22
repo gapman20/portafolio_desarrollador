@@ -27,7 +27,7 @@
 .hero-orb-1 {
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(99,102,241,0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,255,255,0.18) 0%, transparent 70%);
   top: 10%;
   right: 5%;
   animation-delay: 0s;
@@ -36,7 +36,7 @@
 .hero-orb-2 {
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(167,139,250,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,128,128,0.12) 0%, transparent 70%);
   bottom: 15%;
   left: 0%;
   animation-delay: -3s;
@@ -45,7 +45,7 @@
 .hero-orb-3 {
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(56,189,248,0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0,255,255,0.1) 0%, transparent 70%);
   top: 50%;
   right: 30%;
   animation-delay: -5s;
@@ -56,8 +56,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.03) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
@@ -155,7 +155,7 @@
   align-items: center;
   gap: 0.5rem;
   background: var(--accent-primary);
-  color: #fff;
+  color: #0D0D0D;
   padding: 0.85rem 2rem;
   border-radius: var(--radius-md);
   font-size: 0.95rem;
@@ -178,7 +178,7 @@
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(99,102,241,0.45);
+  box-shadow: 0 12px 30px rgba(0,255,255,0.45);
 }
 
 .btn-primary:hover::before { opacity: 1; }
@@ -188,20 +188,20 @@
   align-items: center;
   gap: 0.5rem;
   background: transparent;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding: 0.85rem 2rem;
   border-radius: var(--radius-md);
   font-size: 0.95rem;
   font-weight: 500;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--cyan-glow);
   transition: var(--transition);
   cursor: pointer;
 }
 
 .btn-ghost:hover {
-  color: var(--text-primary);
-  border-color: var(--accent-primary);
-  background: var(--accent-glow);
+  color: var(--carbon);
+  border-color: var(--cyan-glow);
+  background: var(--cyan-glow);
   transform: translateY(-2px);
 }
 
@@ -305,7 +305,7 @@
 .scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, var(--accent-primary), transparent);
+  background: linear-gradient(to bottom, var(--cyan-glow), transparent);
 }
 
 @media (max-width: 768px) {
