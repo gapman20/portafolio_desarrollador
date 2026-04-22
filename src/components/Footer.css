@@ -27,6 +27,13 @@
   color: var(--text-primary);
 }
 
+.footer-text{
+  background: var(--gradient-text-footer);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .footer-logo-accent {
   background: var(--gradient-text);
   -webkit-background-clip: text;

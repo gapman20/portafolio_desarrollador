@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="footer-content">
                     <div className="footer-left">
                         <span className="footer-logo">
-                            {'<'}<span className="footer-logo-accent">Dev</span>{'/>'}
+                            {'<'}<span className='footer-text'>Basalto </span><span className="footer-logo-accent">Dev</span>{'/>'}
                         </span>
                         <div className="footer-divider" />
                         <span className="footer-copy">© {year} Todos los derechos reservados</span>
